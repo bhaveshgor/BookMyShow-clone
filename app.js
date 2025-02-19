@@ -32,6 +32,7 @@ app.use('', routes);
 
 
 
-app.listen(process.env.PORT , () => {
+const PORT = process.env.PORT || 4400;
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Application listening at 4400`);
 })
